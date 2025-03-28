@@ -30,6 +30,7 @@ class Program {
           string fileName = Console.ReadLine();
           file1.SerializeToBinary(fileName);
           Console.WriteLine($"Записано в файл {fileName}!");
+
         } else if (choiceOfReadOrWrite == "2") {
           Console.WriteLine("Вы выбрали чтение из BIN, пожалуйста введите путь к файлу:");
           string fileName = Console.ReadLine();
@@ -37,6 +38,7 @@ class Program {
 
           Console.WriteLine("Содержимое файла:");
           Console.WriteLine(file1.Content);
+
         } else if (choiceOfReadOrWrite == "3") {
           Console.WriteLine("Вы выбрали запись в XML, пожалуйста введите текст файла:");
           string dataFile = Console.ReadLine();
@@ -46,12 +48,14 @@ class Program {
           string fileName = Console.ReadLine();
           file1.SerializeToXml(fileName);
           Console.WriteLine($"Записано в файл {fileName}!");
+
         } else if (choiceOfReadOrWrite == "4") {
           Console.WriteLine("Вы выбрали чтение из XML, пожалуйста введите путь к файлу:");
           string fileName = Console.ReadLine();
           TextFile file1 = TextFile.DeserializeFromXml(fileName);
           Console.WriteLine("Содержимое файла:");
           Console.WriteLine(file1.Content);
+
         } else {
           Console.WriteLine("Неверный выбор.");
         }
@@ -72,6 +76,7 @@ class Program {
           string fileActions = Console.ReadLine();
           if (fileActions == "4") {
             break;
+
           } else if (fileActions == "1") {
             Console.WriteLine("Введите текст, чтобы заменить содержимое файла");
             string dataTxtFile = Console.ReadLine();
@@ -82,6 +87,7 @@ class Program {
 
           } else if (fileActions == "3") {
             editor.OutputContent();
+
           } else {
             Console.WriteLine("Неверный выбор");
           }
