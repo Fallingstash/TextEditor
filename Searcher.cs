@@ -14,6 +14,7 @@ internal class TextFileSearcher {
         foundFiles.Add(filePath);
       }
     }
+
     return foundFiles;
   }
 }
