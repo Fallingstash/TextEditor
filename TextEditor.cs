@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 
-public class TextEditor : Caretaker {
+public class TextEditor : Caretaker { //теперь наследуется от caretaker'a
   public void OpenFile(string filePath) {
     currentFile = new TextFile { FilePath = filePath, Content = File.ReadAllText(filePath) };
     SaveState();
