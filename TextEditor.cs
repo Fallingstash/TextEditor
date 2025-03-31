@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 
-public class TextEditor : Memento {
+public class TextEditor : Caretaker {
   public void OpenFile(string filePath) {
     currentFile = new TextFile { FilePath = filePath, Content = File.ReadAllText(filePath) };
     SaveState();
