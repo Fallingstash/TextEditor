@@ -1,6 +1,6 @@
 ﻿using System;
 
-public class Memento {
+public class Memento { //поменял мементо
   public string FilePath { get; }
   public string Content { get; }
 

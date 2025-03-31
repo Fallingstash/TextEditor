@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.IO;
 
-public class Caretaker {
+public class Caretaker { 
   public TextFile currentFile;
-  private Stack<Memento> history = new Stack<Memento>();
+  private Stack<Memento> history = new Stack<Memento>(); //хранит мементо
 
   public void SaveFile() {
     File.WriteAllText(currentFile.FilePath, currentFile.Content);

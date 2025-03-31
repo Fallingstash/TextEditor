@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
-internal class TextFileSearcher {
+internal class TextFileSearcher { // переименовал файл
   public List<string> SearchFiles(string directoryPath, List<string> keywords) {
     List<string> foundFiles = new List<string>();
 
